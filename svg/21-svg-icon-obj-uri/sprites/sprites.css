@@ -1,0 +1,19 @@
+.cell {
+	display: block;
+	height: 32px;
+	padding-left: 50px;
+	overflow: hidden;
+	position: relative;
+}
+.cell .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cell:hover .icon {
+	top: -32px;
+	left: 0;
+}
+object {
+	pointer-events: none;
+}

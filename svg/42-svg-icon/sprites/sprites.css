@@ -1,0 +1,351 @@
+[class*="icon-"] {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(sprites.svg);
+	background-repeat: no-repeat;
+}
+.icon-home {
+	background-position: 0 0;
+	width: 32px;
+}
+.icon-home2 {
+	background-position: -48px 0;
+	width: 32px;
+}
+.icon-office {
+	background-position: -96px 0;
+	width: 32px;
+}
+.icon-newspaper {
+	background-position: -144px 0;
+	width: 32px;
+}
+.icon-pencil {
+	background-position: -192px 0;
+	width: 32px;
+}
+.icon-quill {
+	background-position: -240px 0;
+	width: 32px;
+}
+.icon-droplet {
+	background-position: -288px 0;
+	width: 32px;
+}
+.icon-spades {
+	background-position: -336px 0;
+	width: 32px;
+}
+.icon-clubs {
+	background-position: -384px 0;
+	width: 32px;
+}
+.icon-diamonds {
+	background-position: -432px 0;
+	width: 32px;
+}
+.icon-pawn {
+	background-position: -480px 0;
+	width: 32px;
+}
+.icon-bullhorn {
+	background-position: -528px 0;
+	width: 32px;
+}
+.icon-calendar {
+	background-position: -576px 0;
+	width: 32px;
+}
+.icon-bubble {
+	background-position: -624px 0;
+	width: 32px;
+}
+.icon-drawer {
+	background-position: -672px 0;
+	width: 32px;
+}
+.icon-tag {
+	background-position: -720px 0;
+	width: 32px;
+}
+.icon-glass {
+	background-position: -768px 0;
+	width: 32px;
+}
+.icon-facebook {
+	background-position: -816px 0;
+	width: 32px;
+}
+.icon-food {
+	background-position: -864px 0;
+	width: 32px;
+}
+.icon-headphones {
+	background-position: -912px 0;
+	width: 32px;
+}
+.icon-camera {
+	background-position: -960px 0;
+	width: 32px;
+}
+
+
+.icon-home:hover {
+	background-position: 0 -32px;
+	width: 32px;
+}
+.icon-home2:hover {
+	background-position: -48px -32px;
+	width: 32px;
+}
+.icon-office:hover {
+	background-position: -96px -32px;
+	width: 32px;
+}
+.icon-newspaper:hover {
+	background-position: -144px -32px;
+	width: 32px;
+}
+.icon-pencil:hover {
+	background-position: -192px -32px;
+	width: 32px;
+}
+.icon-quill:hover {
+	background-position: -240px -32px;
+	width: 32px;
+}
+.icon-droplet:hover {
+	background-position: -288px -32px;
+	width: 32px;
+}
+.icon-spades:hover {
+	background-position: -336px -32px;
+	width: 32px;
+}
+.icon-clubs:hover {
+	background-position: -384px -32px;
+	width: 32px;
+}
+.icon-diamonds:hover {
+	background-position: -432px -32px;
+	width: 32px;
+}
+.icon-pawn:hover {
+	background-position: -480px -32px;
+	width: 32px;
+}
+.icon-bullhorn:hover {
+	background-position: -528px -32px;
+	width: 32px;
+}
+.icon-calendar:hover {
+	background-position: -576px -32px;
+	width: 32px;
+}
+.icon-bubble:hover {
+	background-position: -624px -32px;
+	width: 32px;
+}
+.icon-drawer:hover {
+	background-position: -672px -32px;
+	width: 32px;
+}
+.icon-tag:hover {
+	background-position: -720px -32px;
+	width: 32px;
+}
+.icon-glass:hover {
+	background-position: -768px -32px;
+	width: 32px;
+}
+.icon-facebook:hover {
+	background-position: -816px -32px;
+	width: 32px;
+}
+.icon-food:hover {
+	background-position: -864px -32px;
+	width: 32px;
+}
+.icon-headphones:hover {
+	background-position: -912px -32px;
+	width: 32px;
+}
+.icon-camera:hover {
+	background-position: -960px -32px;
+	width: 32px;
+}
+
+
+
+
+.icon-home-2 {
+	background-position: 0 -64px;
+	width: 32px;
+}
+.icon-home2-2 {
+	background-position: -48px -64px;
+	width: 32px;
+}
+.icon-office-2 {
+	background-position: -96px -64px;
+	width: 32px;
+}
+.icon-newspaper-2 {
+	background-position: -144px -64px;
+	width: 32px;
+}
+.icon-pencil-2 {
+	background-position: -192px -64px;
+	width: 32px;
+}
+.icon-quill-2 {
+	background-position: -240px -64px;
+	width: 32px;
+}
+.icon-droplet-2 {
+	background-position: -288px -64px;
+	width: 32px;
+}
+.icon-spades-2 {
+	background-position: -336px -64px;
+	width: 32px;
+}
+.icon-clubs-2 {
+	background-position: -384px -64px;
+	width: 32px;
+}
+.icon-diamonds-2 {
+	background-position: -432px -64px;
+	width: 32px;
+}
+.icon-pawn-2 {
+	background-position: -480px -64px;
+	width: 32px;
+}
+.icon-bullhorn-2 {
+	background-position: -528px -64px;
+	width: 32px;
+}
+.icon-calendar-2 {
+	background-position: -576px -64px;
+	width: 32px;
+}
+.icon-bubble-2 {
+	background-position: -624px -64px;
+	width: 32px;
+}
+.icon-drawer-2 {
+	background-position: -672px -64px;
+	width: 32px;
+}
+.icon-tag-2 {
+	background-position: -720px -64px;
+	width: 32px;
+}
+.icon-glass-2 {
+	background-position: -768px -64px;
+	width: 32px;
+}
+.icon-facebook-2 {
+	background-position: -816px -64px;
+	width: 32px;
+}
+.icon-food-2 {
+	background-position: -864px -64px;
+	width: 32px;
+}
+.icon-headphones-2 {
+	background-position: -912px -64px;
+	width: 32px;
+}
+.icon-camera-2 {
+	background-position: -960px -64px;
+	width: 32px;
+}
+
+
+.icon-home-2:hover {
+	background-position: 0 -96px;
+	width: 32px;
+}
+.icon-home2-2:hover {
+	background-position: -48px -96px;
+	width: 32px;
+}
+.icon-office-2:hover {
+	background-position: -96px -96px;
+	width: 32px;
+}
+.icon-newspaper-2:hover {
+	background-position: -144px -96px;
+	width: 32px;
+}
+.icon-pencil-2:hover {
+	background-position: -192px -96px;
+	width: 32px;
+}
+.icon-quill-2:hover {
+	background-position: -240px -96px;
+	width: 32px;
+}
+.icon-droplet-2:hover {
+	background-position: -288px -96px;
+	width: 32px;
+}
+.icon-spades-2:hover {
+	background-position: -336px -96px;
+	width: 32px;
+}
+.icon-clubs-2:hover {
+	background-position: -384px -96px;
+	width: 32px;
+}
+.icon-diamonds-2:hover {
+	background-position: -432px -96px;
+	width: 32px;
+}
+.icon-pawn-2:hover {
+	background-position: -480px -96px;
+	width: 32px;
+}
+.icon-bullhorn-2:hover {
+	background-position: -528px -96px;
+	width: 32px;
+}
+.icon-calendar-2:hover {
+	background-position: -576px -96px;
+	width: 32px;
+}
+.icon-bubble-2:hover {
+	background-position: -624px -96px;
+	width: 32px;
+}
+.icon-drawer-2:hover {
+	background-position: -672px -96px;
+	width: 32px;
+}
+.icon-tag-2:hover {
+	background-position: -720px -96px;
+	width: 32px;
+}
+.icon-glass-2:hover {
+	background-position: -768px -96px;
+	width: 32px;
+}
+.icon-facebook-2:hover {
+	background-position: -816px -96px;
+	width: 32px;
+}
+.icon-food-2:hover {
+	background-position: -864px -96px;
+	width: 32px;
+}
+.icon-headphones-2:hover {
+	background-position: -912px -96px;
+	width: 32px;
+}
+.icon-camera-2:hover {
+	background-position: -960px -96px;
+	width: 32px;
+}
