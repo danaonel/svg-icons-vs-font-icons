@@ -52,7 +52,7 @@
 
 -   Font file
 
-### SVG icon CSS BG - Server calls ###
+### SVG icon as CSS BG image - Server calls ###
 
 -   HTML file
 
@@ -60,7 +60,7 @@
 
 -   SVG file 
 
-### SVG icon inline path - Server calls ###
+### SVG icon as inline path - Server calls ###
 
 -   HTML file
 
@@ -79,18 +79,19 @@
 - <http://petercollingridge.appspot.com/svg_optimiser>
 
 - Note: if the SVG file includes gradients, filters, effect or CSS, it is not recommended to use the optimiser because it removes ID and class attributes.
-- Other tools: grunt-svgmin
+- Other tools: grunt-svgmin task. _Edit:_ grunt-svgmin task seems to shave off a third of the file size and it can be combined with grunticon (basically killing two birds with one stone, the stone being Grunt and the birds being file size optimizations and conversion to Data URI)
 
 ## Data URI Encoder used ##
 
 - <http://www.mobilefish.com/services/base64/base64.php>
+- Alternativelly we can use grunticon task to automate the conversion to Data URI.
 
 -----------------------
 
 ## Fall back IE8 ##
 
 - PNG for SVG (there are a variety of fallbacks both javascript based and pure CSS)
-- Grunticon
+- Grunticon task does a great job at converting the svg files to png and writing javascript fallback for IE8 and below.
 
 -----------------------
 
@@ -117,7 +118,7 @@
 - Open Illustrator file from designer
 - The illustrator file should already have paths
 - Save file as SVG
-- Optimize the SVG file using above tool
+- Optimize the SVG file using any of the above tools
 - Encode the optimized SVG file to Data URI
 
 -----------------------
