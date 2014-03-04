@@ -79,7 +79,7 @@
 
 -   <http://demosthenes.info/blog/744/Make-SVG-Responsive>
 
-  []: ../../../../Desktop/Screen Shot 2014-03-04 at 12.18.01 PM.png
-  [1]: ../../../../Desktop/Screen Shot 2014-03-04 at 12.26.02 PM.png
-  [2]: ../../../../Desktop/Screen Shot 2014-03-04 at 12.23.58 PM.png
-  [3]: ../../../../Desktop/Screen Shot 2014-03-04 at 12.29.21 PM.png
+  []: img/ai-layers-bad.png
+  [1]: img/svg-bad.png
+  [2]: img/ai-layers-good.png
+  [3]: img/svg-good.png
