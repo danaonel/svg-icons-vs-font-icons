@@ -79,6 +79,8 @@
 
 -   <http://demosthenes.info/blog/744/Make-SVG-Responsive>
 
+-   <http://blogs.msdn.com/b/ie/archive/2011/10/27/best-practices-for-getting-started-with-svg.aspx>
+
   []: img/ai-layers-bad.png
   [1]: img/svg-bad.png
   [2]: img/ai-layers-good.png
