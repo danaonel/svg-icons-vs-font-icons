@@ -68,6 +68,16 @@
 
 ![][3]
 
+## Illustrator CC
+
+Adobe released an update in January 2014 that outputs responsive SVG
+graphics. See the following link for a demonstration of responsive SVG
+independent of CSS. Resize the browser window.
+
+-   <http://www.applebydesign.com.au/blog/news/testing-adobe-illustrator-cc-responsive-svg>
+
+-   <http://www.applebydesign.com.au/wp-content/uploads/2014/01/svgtest-2.svg>
+
 ### Reference
 
 -   <http://help.adobe.com/en_US/illustrator/cs/using/WS714a382cdf7d304e7e07d0100196cbc5f-6360a.html#WS714a382cdf7d304e7e07d0100196cbc5f-635fa>
