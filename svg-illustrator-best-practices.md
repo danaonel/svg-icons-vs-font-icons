@@ -5,9 +5,9 @@
 -   Add a transparent square path at the bottom. This will serve as
     canvas when exporting to CSS background-image in Data URI format.
 
--   Ideally you would use one layer with a simplified path. Multiple
-    layers are used to add structure and depths to an SVG file, however
-    our icons are flat.
+-   Ideally you would use one layer with only one simplified path.
+    Multiple layers are used to add structure and depths to an SVG file,
+    however our icons are flat.
 
 -   Use symbols and simplify the paths in your artwork to improve SVG
     performance. Also avoid using brushes that produce a lot of path
@@ -22,7 +22,8 @@
     balance between quality and number of points.
 
 -   The simpler the image, the more consistent it will display across
-    all platforms.
+    all platforms. Use Merge Shapes to combine different shapes into one
+    layer.
 
 -   Delete any hidden layers.
 
