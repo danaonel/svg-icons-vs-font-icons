@@ -80,6 +80,12 @@
 
 - Note: if the SVG file includes gradients, filters, effect or CSS, it is not recommended to use the optimiser because it removes ID and class attributes.
 - Other tools: grunt-svgmin task. _Edit:_ grunt-svgmin task seems to shave off a third of the file size and it can be combined with grunticon (basically killing two birds with one stone, the stone being Grunt and the birds being file size optimizations and conversion to Data URI)
+- SVG can be turned into SVGZ files by compressing them with gzip (e.g. using the command line "gzip -9 filename")?  It makes the files *way* smaller, and can be used as long as the SVG files are not inline.  The only thing you have to do is put the following lines inside the .htaccess file into your doc root:
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+- Alternativiely you can configure your Apache server to do this server-wide. 
 
 ## Data URI Encoder used ##
 
@@ -102,6 +108,9 @@
 - Font Icons are monochrome and don't support animation capabilities
 - SVG is more robust when it comes to browser support (Chrome font bugs, Firefox renders icon fonts crisper, some mobile browsers can be tricky with web fonts)
 - More control over SVG code
+- Issues with font-smoothing. You cannot guarantee how the font is going to be rendered, because Windows, OSX and Linux render them differently.
+- In Windows, font-smoothing can be turned off at the strangest times (for example, when doing a webex or a similar screenshare)
+- CSS3 Transforms have some unexpected effects on effects on typography when animating them.
 
 ## SVG Concerns ##
 
@@ -109,6 +118,7 @@
 - More DOM nodes when SVG is inline
 - Less CSS control
 - SVG accessible to Javascript, thus we can manipulate parts of the image with client-side scripts
+- Need extra time for SVG creation in Illustrator (adds to creative timeline)
 
 
 -----------------------
@@ -125,6 +135,8 @@
 
 ## Reference ##
 
+- <http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques>
+- <http://css-tricks.com/icon-fonts-vs-svg/>
 - <http://toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script/>
 - <http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/>
 - <http://css-tricks.com/using-svg/>
