@@ -58,8 +58,8 @@
     inline. The only thing you have to do is put the following lines
     inside the .htaccess file into your doc root:
 
-    `AddType image/svg+xml svg svgz`
-    `AddEncoding gzip svgz`
+    `AddType image/svg+xml svg svgz
+    AddEncoding gzip svgz`
 
 -   Alternativiely you can configure your Apache server to do this
     server-wide.
