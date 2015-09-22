@@ -27,116 +27,214 @@
         </ul>
       </header>
       <section>
-        <p>&lt;!DOCTYPE html&gt;
+        <h2>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>ABOUT</h2>
 
-</p>
+<h3>
+<a id="testing-svg-icons-versus-font-icons" class="anchor" href="#testing-svg-icons-versus-font-icons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing SVG icons versus font icons</h3>
+
+<ul>
+<li><p>Criteria used: number of server calls, number of new HTML nodes,
+number of CSS lines required, file size, file size after compression
+and responsiveness capability.</p></li>
+<li><p>Test link:
+<a href="http://danaonel.github.io/svg-icons-vs-font-icons/index.html">http://danaonel.github.io/svg-icons-vs-font-icons/index.html</a></p></li>
+</ul>
+
+<pre>
     
-    
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| Stuff to measure         | Server Calls          | HTML Nodes   |   CSS Lines     | File Size             | Compression           | Responsive            |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| Font icons (1 icon)      | 3                     | 1 per icon   | 31              | 1.3k                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| Font icons (21 icons)    | 3                     | 1 per icon   | 91              | 3.9K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (1 icon) - CSS BG      1                     | 1 per icon   | 15              | 0.9K                  | 0.3k                  | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons) - CSS BG    3                     | 1 per icon   | 133             | 18.5K                 | 14.0k                 | No                    |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons) - CSS BG URI  3                   | 1 per icon   | 133             | 9K                    | NA                    | No                    |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons indiv) - CSS BG URI  2             | 1 per icon   | 73              | 7.4K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (42 icons) - CSS BG    3                     | 1 per icon   | 263             | 36.3K                 | 26.0k                 | No                    |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (42 icons) - CSS BG URI  2                   | 1 per icon   | 263             | 15.2K                 | 26.0k                 | No                    |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (1 icon) - INLINE    | 2                     | 5 per icon   | 16              | 0.2K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons) - INLINE  | 2                     | 105          | 16              | 3.6K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (42 icons) - INLINE  | 2                     | 210          | 16              | 4.1K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (1 icon) - OBJ       | 2                     | 1 per icon   | 0               | 0.9K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons) - OBJ     | 21                    | 1 per icon   | 0               | 24.6K                 | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (1 icon) - XLINK     | 3                     | 2 per icon   | 10              | 0.9K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (21 icons) - XLINK   | 3                     | 2 per icon   | 10              | 3.6K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
+| SVG (42 icons) - XLINK   | 3                     | 2 per icon   | 10              | 4.1K                  | NA                    | Yes                   |
++--------------------------+-----------------------+--------------+-----------------+-----------------------+-----------------------+-----------------------+
 
-<pre><code>&lt;meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1.5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /&gt;
+</pre>
 
-&lt;link rel="stylesheet" href="/sapient/svg/css/style.css" /&gt;
+<h3>
+<a id="font-icon---server-calls" class="anchor" href="#font-icon---server-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>Font Icon - Server calls</h3>
 
-&lt;title&gt;SVG vs Font Icon Test - Index&lt;/title&gt;
-</code></pre>
+<ul>
+<li><p>HTML file</p></li>
+<li><p>CSS file</p></li>
+<li><p>Font file</p></li>
+</ul>
 
-<p>
-</p>
-    <h3>
-<a id="svg-vs-icon-font-test" class="anchor" href="#svg-vs-icon-font-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG vs Icon Font Test</h3>
-    <ul>
-        <li>
-            <a href="font/1-font-icon/demo.html" target="_blank">
-                1 Font Icon
-            </a>
-        </li>
-        <li>
-            <a href="font/21-font-icon/demo.html" target="_blank">
-                21 Font Icons
-            </a>
-        </li>
-    </ul>
-    <hr>
-    <ul>
-        <li>
-            <a href="svg/1-svg-icon/sprites/sprites.html" target="_blank">
-                1 SVG Icon + Hover (CSS BG)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon/sprites/sprites.html" target="_blank">
-                21 SVG Icons + Hover (CSS BG)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon-uri/sprites/sprites.html" target="_blank">
-                21 SVG Icons + Hover (CSS BG as Data URI)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon-uri-2/sprites/sprites.html" target="_blank">
-                21 SVG Icons + Hover (CSS BG as Data URI for individual icons)
-            </a>
-        </li>
-        <li>
-            <a href="svg/42-svg-icon/sprites/sprites.html" target="_blank">
-                42 SVG Icons + Hover (CSS BG)
-            </a>
-        </li>
-        <li>
-            <a href="svg/42-svg-icon-uri/sprites/sprites.html" target="_blank">
-                42 SVG Icons + Hover (CSS BG as Data URI)
-            </a>
-        </li>
-    </ul>
-    <hr>
-    <ul>
-        <li>
-            <a href="svg/1-svg-icon-inline/sprites/sprites.html" target="_blank">
-                1 SVG Icon + Hover (Inline)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon-inline/sprites/sprites.html" target="_blank">
-                21 SVG Icon + Hover (Inline)
-            </a>
-        </li>
-        <li>
-            <a href="svg/42-svg-icon-inline/sprites/sprites.html" target="_blank">
-                42 SVG Icon + Hover (Inline)
-            </a>
-        </li>
-    </ul>
-    <hr>
-    <ul>
-        <li>
-            <a href="svg/1-svg-icon-obj/sprites/sprites.html" target="_blank">
-                1 SVG Icon + Hover (Object)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon-obj/sprites/sprites.html" target="_blank">
-                21 SVG Icon + Hover (Object)
-            </a>
-        </li>
-    <hr>
-        <li>
-            <a href="svg/1-svg-icon-xlink/sprites/sprites.html" target="_blank">
-                1 SVG Icon + Hover (xlink)
-            </a>
-        </li>
-        <li>
-            <a href="svg/21-svg-icon-xlink/sprites/sprites.html" target="_blank">
-                21 SVG Icon + Hover (xlink)
-            </a>
-        </li>
-        <li>
-            <a href="svg/42-svg-icon-xlink/sprites/sprites.html" target="_blank">
-                42 SVG Icon + Hover (xlink)
-            </a>
-        </li>
-    </ul>
+<h3>
+<a id="svg-icon-as-css-bg-image---server-calls" class="anchor" href="#svg-icon-as-css-bg-image---server-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG icon as CSS BG image - Server calls</h3>
 
+<ul>
+<li><p>HTML file</p></li>
+<li><p>CSS file</p></li>
+<li><p>SVG file</p></li>
+</ul>
+
+<h3>
+<a id="svg-icon-as-inline-path---server-calls" class="anchor" href="#svg-icon-as-inline-path---server-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG icon as inline path - Server calls</h3>
+
+<ul>
+<li><p>HTML file</p></li>
+<li><p>CSS file</p></li>
+</ul>
+
+<h3>
+<a id="svg-icon-object---server-calls" class="anchor" href="#svg-icon-object---server-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG icon object - Server calls</h3>
+
+<ul>
+<li><p>HTML file</p></li>
+<li><p>SVG files (if the SVG file is Base 64 encoded, we have to add CSS
+separately, so that will make a 3rd server call)</p></li>
+</ul>
+
+<h3>
+<a id="svg-icon-xlink---server-calls" class="anchor" href="#svg-icon-xlink---server-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG icon xlink - Server calls</h3>
+
+<ul>
+<li><p>HTML file</p></li>
+<li><p>CSS file</p></li>
+<li><p>SVG file (the SVG file will contain all icons)</p></li>
+</ul>
+
+<h2>
+<a id="compression-tool-used" class="anchor" href="#compression-tool-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compression tool used</h2>
+
+<ul>
+<li><p><a href="http://petercollingridge.appspot.com/svg_optimiser">http://petercollingridge.appspot.com/svg_optimiser</a></p></li>
+<li><p>Note: if the SVG file includes gradients, filters, effect or CSS, it
+is not recommended to use the optimiser because it removes ID and
+class attributes.</p></li>
+<li><p>Other tools: grunt-svgmin task. <em>Edit:</em> grunt-svgmin task seems to
+shave off a third of the file size and it can be combined with
+grunticon (basically killing two birds with one stone, the stone
+being Grunt and the birds being file size optimizations and
+conversion to Data URI)</p></li>
+<li>
+<p>SVG can be turned into SVGZ files by compressing them with gzip
+(e.g. using the command line "gzip -9 filename") It makes the files
+<em>way</em> smaller, and can be used as long as the SVG files are not
+inline. The only thing you have to do is put the following lines
+inside the .htaccess file into your doc root:</p>
+
+<p><code>AddType image/svg+xml svg svgz</code></p>
+
+<p><code>AddEncoding gzip svgz</code></p>
+</li>
+<li><p>Alternativiely you can configure your Apache server to do this
+server-wide.</p></li>
+</ul>
+
+<h2>
+<a id="data-uri-encoder-used" class="anchor" href="#data-uri-encoder-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data URI Encoder used</h2>
+
+<ul>
+<li><p><a href="http://www.mobilefish.com/services/base64/base64.php">http://www.mobilefish.com/services/base64/base64.php</a></p></li>
+<li><p>Alternativelly we can use grunticon task to automate the conversion
+to Data URI.</p></li>
+</ul>
+
+<h2>
+<a id="fall-back-ie8" class="anchor" href="#fall-back-ie8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fall back IE8</h2>
+
+<ul>
+<li><p>PNG for SVG (there are a variety of fallbacks both javascript based
+and pure CSS)</p></li>
+<li><p>Grunticon task does a great job at converting the svg files to png
+and writing javascript fallback for IE8 and below.</p></li>
+</ul>
+
+<h2>
+<a id="font-icons-concerns" class="anchor" href="#font-icons-concerns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Font Icons Concerns</h2>
+
+<ul>
+<li><p>Font icon fiddly to position</p></li>
+<li><p>Problems with :before :after pseudo classes in the sense that they
+might be used for something else thus conflicting with the icon
+which relies on these pseudoclasses (.nav:before { content:
+"fonticon"; })</p></li>
+<li><p>Font Icons are monochrome and don't support animation capabilities</p></li>
+<li><p>SVG is more robust when it comes to browser support (Chrome font
+bugs, Firefox renders icon fonts crisper, some mobile browsers can
+be tricky with web fonts)</p></li>
+<li><p>More control over SVG code</p></li>
+<li><p>Issues with font-smoothing. You cannot guarantee how the font is
+going to be rendered, because Windows, OSX and Linux render them
+differently.</p></li>
+<li><p>In Windows, font-smoothing can be turned off at the strangest times
+(for example, when doing a webex or a similar screenshare)</p></li>
+<li><p>CSS3 Transforms have some unexpected effects on effects on
+typography when animating them.</p></li>
+</ul>
+
+<h2>
+<a id="svg-concerns" class="anchor" href="#svg-concerns" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG Concerns</h2>
+
+<ul>
+<li><p>Larger file sizes</p></li>
+<li><p>More DOM nodes when SVG is inline</p></li>
+<li><p>Less CSS control</p></li>
+<li><p>SVG accessible to Javascript, thus we can manipulate parts of the
+image with client-side scripts</p></li>
+<li><p>Need extra time for SVG creation in Illustrator (adds to creative
+timeline)</p></li>
+</ul>
+
+<h2>
+<a id="svg-creation" class="anchor" href="#svg-creation" aria-hidden="true"><span class="octicon octicon-link"></span></a>SVG Creation</h2>
+
+<ul>
+<li><p>Open Illustrator file from designer</p></li>
+<li><p>The illustrator file should already have paths</p></li>
+<li><p>Save file as SVG</p></li>
+<li><p>Optimize the SVG file using any of the above tools</p></li>
+<li><p>Encode the optimized SVG file to Data URI</p></li>
+</ul>
+
+<h2>
+<a id="reference" class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
+
+<ul>
+<li><p><a href="http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques">http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques</a></p></li>
+<li><p><a href="http://css-tricks.com/icon-fonts-vs-svg/">http://css-tricks.com/icon-fonts-vs-svg/</a></p></li>
+<li><p><a href="http://toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script/">http://toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script/</a></p></li>
+<li><p><a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/</a></p></li>
+<li><p><a href="http://css-tricks.com/using-svg/">http://css-tricks.com/using-svg/</a></p></li>
+<li><p><a href="http://www.hongkiat.com/blog/scalable-vector-graphic-css-styling/">http://www.hongkiat.com/blog/scalable-vector-graphic-css-styling/</a></p></li>
+<li><p><a href="http://codepen.io/chriscoyier/pen/evcBu">http://codepen.io/chriscoyier/pen/evcBu</a></p></li>
+<li><p><a href="http://caniuse.com/#feat=svg-css">http://caniuse.com/#feat=svg-css</a></p></li>
+<li><p><a href="http://demosthenes.info/blog/675/Create-Adaptive-SVG-Illustrations-With-CSS">http://demosthenes.info/blog/675/Create-Adaptive-SVG-Illustrations-With-CSS</a></p></li>
+<li><p><a href="http://www.w3.org/TR/SVGMobile/">http://www.w3.org/TR/SVGMobile/</a></p></li>
+<li><p><a href="http://www.w3.org/TR/SVG/">http://www.w3.org/TR/SVG/</a></p></li>
+</ul>
       </section>
     </div>
     <footer>
