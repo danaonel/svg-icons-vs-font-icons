@@ -7,7 +7,7 @@
     and responsiveness capability.
 
 -   Test link:
-    <http://danaonel.github.io/svg-icons-vs-font-icons/index.html>
+    <http://danaonel.github.io/svg-icons-vs-font-icons/test.html>
 
 <pre>
 	
