@@ -7,7 +7,7 @@
     and responsiveness capability.
 
 -   Test link:
-    <http://www.voicefortheneedy.org/sapient/font-icon-svg-test/>
+    <http://danaonel.github.io/svg-icons-vs-font-icons/index.html>
 
 <pre>
 	
