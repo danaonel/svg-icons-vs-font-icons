@@ -7,7 +7,7 @@
     and responsiveness capability.
 
 -   Test link:
-    <http://www.voicefortheneedy.com/sapient/index.html>
+    <http://www.voicefortheneedy.com/sapient/font-icon-svg-test/index.html>
 
 <pre>
 	
