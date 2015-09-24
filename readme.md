@@ -223,4 +223,8 @@
 
 -   <http://www.w3.org/TR/SVG/>
 
+-   <https://github.com/filamentgroup/grunticon>
+
+-   <https://github.com/sindresorhus/grunt-svgmin>
+
 
