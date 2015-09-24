@@ -7,7 +7,7 @@
     and responsiveness capability.
 
 -   Test link:
-    <http://sapientla.public.sapient.com/dpopescu/svg-vs-font-icons/>
+    <http://danaonel.github.io/svg-vs-font-icons/demo.html>
 
 
 <pre>
