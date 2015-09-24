@@ -7,7 +7,7 @@
     and responsiveness capability.
 
 -   Test link:
-    <http://danaonel.github.io/svg-vs-font-icons/demo.html>
+    <http://danaonel.github.io/svg-icons-vs-font-icons/demo.html>
 
 
 <pre>
@@ -48,9 +48,10 @@
 | SVG (42 icons) - XLINK                 | 3                     | 88           | 10              | 0.1K|7.3K|18.7K         | 0.4K|1.2K|4.4K        | Yes*                  |
 +----------------------------------------+-----------------------+--------------+-----------------+-------------------------+-----------------------+-----------------------+
 
-* The maximum size of the SVG icon is determined by the path size.
-
 </pre>
+
+* CSS cannot force the SVG size to be larger than the native size of its `<shape>` or `<path>`
+
 
 ### Font Icon - Server calls
 
