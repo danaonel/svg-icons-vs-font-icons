@@ -1,0 +1,10 @@
+.cell .icon {
+    float: left;
+    padding-right: 13px;
+}
+.cell .icon {
+    color: #000;
+}
+.cell .icon:hover {
+    color: #ff00ff;
+}
