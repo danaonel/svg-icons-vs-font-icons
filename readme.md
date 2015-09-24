@@ -48,9 +48,10 @@
 | SVG (42 icons) - XLINK                 | 3                     | 88           | 10              | 0.1K|7.3K|18.7K         | 0.4K|1.2K|4.4K        | Yes*                  |
 +----------------------------------------+-----------------------+--------------+-----------------+-------------------------+-----------------------+-----------------------+
 
+</pre>
+
 * CSS cannot force the SVG size to be larger than the native size of its `<shape>` or `<path>`
 
-</pre>
 
 ### Font Icon - Server calls
 
